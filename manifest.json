@@ -1,0 +1,31 @@
+{
+  "manifest_version": 3,
+  "name": "trkendimce Zoom",
+  "version": "1.1",
+  "description": "Slider ve kısayol ile hassas zoom",
+  "permissions": ["scripting", "activeTab"],
+  "action": {
+    "default_popup": "popup.html",
+    "default_icon": "icon.png"
+  },
+  "icons": {
+    "128": "icon.png"
+  },
+  "commands": {
+    "zoom_in": {
+      "suggested_key": {
+        "default": "Ctrl+Shift+Up"
+      },
+      "description": "Zoom artır"
+    },
+    "zoom_out": {
+      "suggested_key": {
+        "default": "Ctrl+Shift+Down"
+      },
+      "description": "Zoom azalt"
+    }
+  },
+  "background": {
+    "service_worker": "background.js"
+  }
+}

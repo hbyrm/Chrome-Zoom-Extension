@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <style>
+    body {
+      width: 220px;
+      font-family: Arial;
+      text-align: center;
+    }
+    input[type=range] {
+      width: 180px;
+    }
+    input[type=number] {
+      width: 60px;
+      margin-top: 10px;
+    }
+    button {
+      margin-top: 10px;
+      padding: 5px 10px;
+    }
+  </style>
+</head>
+<body>
+  <h3>Zoom Ayarı</h3>
+
+  <input type="range" id="slider" min="50" max="300" value="100">
+  <br>
+  <span id="value">100%</span>
+
+  <br>
+  <input type="number" id="zoomInput" value="100">
+
+  <br>
+  <button id="applyZoom">Uygula</button>
+
+  <script src="popup.js"></script>
+</body>
+</html>
